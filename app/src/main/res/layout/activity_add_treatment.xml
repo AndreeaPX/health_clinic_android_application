@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddTreatmentActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/medical_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView_medicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:alpha="0.6"
+        android:hint="@string/select_medicine"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:drawableEndCompat="@drawable/arrow_drop_down_24" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/starting_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_medicine" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout9"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:textColorHint="@color/white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxCornerRadiusBottomEnd="10dp"
+
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/grey"
+        app:hintTextColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_startingDateMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.30"
+            android:hint="@string/date_format"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="@string/dosage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout11"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxCornerRadiusBottomEnd="10dp"
+
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/grey"
+        app:hintTextColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:hint="@string/mg"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="@string/frequency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout11" />
+
+    <Spinner
+        android:id="@+id/spinner_feq"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:alpha="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:text="@string/time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_feq" />
+
+    <Spinner
+        android:id="@+id/spinner_interval"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@color/white"
+        android:alpha="0.2"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_sendMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/btn_send"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_interval" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

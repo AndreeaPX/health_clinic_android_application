@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/main_back">
+
+            <ImageView
+                android:id="@+id/imageView_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/person_icon" />
+
+            <ImageButton
+                android:id="@+id/imageButton_uploadPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/imageView_profile"
+                android:layout_alignBottom="@+id/imageView_profile"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/photo"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_camera" />
+
+            <EditText
+                android:id="@+id/textView_profileUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView_profile"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:hint="@string/loading"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck">
+
+
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/email_icon"
+                android:id="@+id/ic_email">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/ic_email"
+                android:layout_marginStart="50dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/loading"
+                android:textSize="19dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_email"
+                android:background="@color/purple_500"
+                android:id="@+id/divider_email">
+            </View>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/phone_icon"
+                android:id="@+id/ic_phone"
+                android:layout_below="@+id/divider_email"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/textView_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_email"
+                android:layout_alignStart="@id/ic_phone"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/loading"
+                android:textSize="19dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_phone"
+                android:background="@color/purple_500"
+                android:id="@+id/divider_phone">
+            </View>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_city"
+                android:id="@+id/ic_city"
+                android:layout_below="@+id/divider_phone"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/textView_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_phone"
+                android:layout_alignStart="@id/ic_city"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/loading"
+                android:textSize="19dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_city"
+                android:background="@color/purple_500"
+                android:id="@+id/divider_city">
+            </View>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/home_icon"
+                android:id="@+id/ic_address"
+                android:layout_below="@+id/divider_city"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/textView_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_city"
+                android:layout_alignStart="@id/ic_address"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/loading_"
+                android:textSize="19dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_address"
+                android:background="@color/purple_500"
+                android:id="@+id/divider_address">
+            </View>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/calendar_icon"
+                android:id="@+id/ic_birthday"
+                android:layout_below="@+id/divider_address"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/textView_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_address"
+                android:layout_alignStart="@id/ic_birthday"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/loading"
+                android:textSize="19dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_birthday"
+                android:background="@color/purple_500"
+                android:id="@+id/divider_birthday">
+            </View>
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/occupation_icon"
+                android:id="@+id/ic_occupation"
+                android:layout_below="@+id/divider_birthday"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/textView_occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_birthday"
+                android:layout_alignStart="@id/ic_occupation"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/loading"
+                android:textSize="19dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_occupation"
+                android:background="@color/purple_500"
+                android:id="@+id/divider_occupation">
+            </View>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/person_icon"
+                android:id="@+id/ic_gender"
+                android:layout_below="@+id/divider_occupation"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/textView_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_occupation"
+                android:layout_alignStart="@id/ic_gender"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/loading"
+                android:textSize="19dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_gender"
+                android:background="@color/purple_500"
+                android:id="@+id/divider_gender">
+            </View>
+
+            <Button
+                android:id="@+id/button_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_gender"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="@string/btn_edit" />
+
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_gender"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@id/divider_gender"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="@string/btn_delete" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

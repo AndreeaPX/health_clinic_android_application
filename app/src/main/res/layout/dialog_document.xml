@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+
+        <Button
+            android:id="@+id/button_cancelDialogDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancel"
+            android:backgroundTint="@color/purple_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_documentBody" />
+
+        <EditText
+            android:id="@+id/EditText_SearchInDocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="@string/search_"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_documentBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditText_SearchInDocument"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_startReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/read"
+            app:icon="@drawable/ic_baseline_volume_up_24"
+            app:layout_constraintEnd_toStartOf="@+id/button_stopReading"
+            app:layout_constraintTop_toBottomOf="@+id/editText_documentBody" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_stopReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/stop"
+            android:backgroundTint="@color/RiskRed"
+            app:icon="@drawable/ic_baseline_volume_off_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_documentBody" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

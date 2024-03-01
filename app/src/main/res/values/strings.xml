@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">MSL</string>
+    <string name="app_title">My simple life</string>
+    <!--    Boarding screen text-->
+    <!-- story 1   -->
+    <string name="story_1_welcome">Welcome to MSL!</string>
+    <string name="story_1_description">With us, managing your medical history has never been easier! “Wherever the art of medicine is loved, there is also a love of humanity.” – Hippocrates</string>
+    <!-- story 2   -->
+    <string name="story_2_welcome">Everything is so fast!</string>
+    <string name="story_2_description">Now all the information you need is in your pocket. You can book doctor\'s appointments and check the current status of the clinic in one second.</string>
+    <!-- story 3   -->
+    <string name="story_3_welcome">We care about you!</string>
+    <string name="story_3_description">You can always give us feedback about your experiences with the app! We provide 24h support for our users.</string>
+    <!-- buttons for stories   -->
+    <string name="btn_Skip">Skip</string>
+    <string name="btn_Next">Next</string>
+    <string name="btn_Start">Let\'s get started</string>
+    <!-- Login   -->
+    <string name="welcome">Welcome,</string>
+    <string name="login_1">Glad to see you!</string>
+    <string name="login">Login</string>
+    <string name="verify_login">Already have an account?</string>
+    <string name="verify_connection">Incorrect email or password, please try again!</string>
+    <!-- Sign up -->
+    <string name="create_account">Create Account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="verify_sign_up">Don\'t have an account?</string>
+
+    <!-- Change password -->
+    <string name="change_password">Change your password</string>
+    <!--comun -->
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_sign_up_with">Or Sign Up with</string>
+    <string name="or_login_with">Or Login with</string>
+    <string name="email">Email Address :</string>
+    <string name="password">Password :</string>
+    <string name="confirm_pass">Confirm Password :</string>
+
+    <!-- validation   -->
+    <string name="invalid_Email">Invalid Email address</string>
+    <string name="invalid_password">Invalid password</string>
+    <!-- menu   -->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="medical_files">Medical files</string>
+    <string name="history">History</string>
+    <string name="treatment">Treatment</string>
+    <string name="log_out">Log out</string>
+    <string name="menu_open">Open menu</string>
+    <string name="menu_close">Close menu</string>
+
+    <!-- appointment   -->
+    <string name="choose_specialization">Please choose a specialization :</string>
+    <string name="choose_clinic">Please choose a clinic :</string>
+    <string name="choose_doctor">Please choose a doctor :</string>
+    <string name="choose_date">Date :</string>
+    <string name="choose_time">Time :</string>
+    <string name="more_specifications">Add details if you need to :</string>
+    <string name="date_picker">Jan/01/2020</string>
+    <string name="select_time">Select time</string>
+    <string name="btn_send">Send</string>
+    <string name="select_weekday">Please select a weekday.</string>
+    <string name="select_time_from_interval">Please select a time between 9:00 and 17:00.</string>
+    <string name="select_clinic">Please select a clinic.</string>
+    <string name="select_specialization">Please select a specialization.</string>
+    <string name="select_doctor">Please select a doctor.</string>
+    <string name="future_date">Please select a future date.</string>
+
+    <!-- Personal Data  -->
+    <string name="first_name">First Name :</string>
+    <string name="last_name">Last Name :</string>
+    <string name="choose_birthday">Please enter your birthday :</string>
+    <string name="phone_number">Phone Number :</string>
+    <string name="address">Address :</string>
+    <string name="occupation">Please enter your occupation :</string>
+    <string name="city">City :</string>
+    <string name="status">Status</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="photo">Choose a profile picture</string>
+    <string name="under_18">You can not register if you are under 18 years old.</string>
+    <string name="picture_err">The picture can not be loaded at the moment.</string>
+    <string name="email_saved">This email or phone number is already registered.</string>
+    <string name="picture_saved">Profile picture uploaded successfully.</string>
+    <string name="picture_err_upload">Failed to upload picture!</string>
+    <string name="try_again">Please try again.</string>
+
+    <!-- Data validation   -->
+    <string name="enter_email">Please enter an email address</string>
+    <string name="enter_password">Please add a password</string>
+    <string name="enter_confirmation">Please confirm the password</string>
+    <string name="error_confirmation">Password doesn\'t match</string>
+    <string name="error_data_adding">All fields are required</string>
+    <string name="error_phoneNumber_adding">Phone number is invalid (minimum 10 numbers)</string>
+    <string name="error_phoneNumber_unique">This phone number is already used by somebody else</string>
+    <string name="underage">If you are underage, you can not create an account</string>
+
+    <!-- illness form   -->
+    <string name="date_format">yyyy-mm-dd</string>
+    <string name="illness_form">Add a new condition</string>
+    <string name="starting_date">Please enter the starting date :</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_edit">Edit</string>
+    <string name="select_illness">Please select an affection.</string>
+    <string name="URL_ACASA">http://192.168.100.30/Inregistrare/</string>
+    <string name="loading">Loading...</string>
+
+    <!-- medical form -->
+    <string name="medical_form">Add a new medicine</string>
+    <string name="dosage">Please add the dosage value :</string>
+    <string name="mg">mg/dose</string>
+    <string name="frequency">How many times a day do you take this medicine?</string>
+    <string name="time">Please select the corresponding interval :</string>
+    <string name="select_medicine">Select medicine</string>
+    <string name="edit_treatment_title">Edit your treatment!</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="when">When :</string>
+    <string name="select_medicine_">Please select a medicine.</string>
+    <string name="format_err">This date does not respects the defined format, please try again.</string>
+    <!-- spinner population   -->
+    <array name="spinner_times_a_day">
+        <item>One time maximum</item>
+        <item>Two times maximum</item>
+        <item>Three times maximum</item>
+        <item>Four times maximum</item>
+        <item>Only when I feel the need</item>
+    </array>
+
+    <array name="spinner_interval">
+        <item>Every day</item>
+        <item>A number of times per week</item>
+        <item>A number of times per month</item>
+        <item>Not a specific interval</item>
+    </array>
+
+    <!-- File form  -->
+    <string name="upload_file">Upload a PDF file!</string>
+    <string name="select_file">Select file</string>
+    <string name="file_selected">File selected</string>
+    <string name="pdf_url">This will be the pdf url</string>
+    <string name="pdf_name">Enter a name for this file</string>
+    <string name="example_name">Ex : Blood Sugar Test</string>
+    <string name="cancel_">Canceled...</string>
+    <string name="camera_permission">Camera and storage permissions are required.</string>
+    <string name="storage_permission">Storage permissions are required.</string>
+    <string name="select_image_">Please select an image first.</string>
+
+    <!-- home recycleView   -->
+    <string name="cancel_appointment">Cancel appointment</string>
+    <string name="no_details">No details</string>
+    <string name="rating">Give this a rating!</string>
+
+    <!-- Dialog review -->
+    <string name="title_rating">Ratings!</string>
+    <string name="comment">Leave us a comment!</string>
+
+    <!-- Messages -->
+    <string name="success">Success!</string>
+    <string name="select_condition">Select condition</string>
+    <string name="search">Search</string>
+    <string name="loading_">Loading...</string>
+    <string name="select_image">Select Image</string>
+    <string name="extract_text">Extract text</string>
+    <string name="recognized_text">Recognized text</string>
+    <string name="do_you_want_to_save_this_text_first_set_the_title">Do you want to save this text? First, set the title :</string>
+    <string name="to_get_started_now">to get started now!</string>
+    <string name="search_">Search</string>
+    <string name="read">Read</string>
+    <string name="stop">Stop</string>
+    <string name="select_documents">Select Documents</string>
+    <string name="search__">Search...</string>
+    <string name="find_all">Find All</string>
+    <string name="how_many_times">How many times :</string>
+    <string name="when_">When :</string>
+    <string name="no_rating">No rating</string>
+
+    <string name="connection_err">There is a problem with the connection.</string>
+    <string name="read_err">There is no text to read.</string>
+    <string name="sound_err">There is no sound to stop.</string>
+
+</resources>
